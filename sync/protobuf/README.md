@@ -69,4 +69,4 @@ Status code distribution:
 
 ## References
 * [Awesome GRPC](https://github.com/grpc-ecosystem/awesome-grpc)
-* [gRPC benchmarking and load testing tool](https://ghz.sh/)
+* [gRPC benchmarking and load testing](https://grpc.io/docs/guides/benchmarking/)
