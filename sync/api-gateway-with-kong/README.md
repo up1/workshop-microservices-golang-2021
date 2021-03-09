@@ -7,7 +7,7 @@ $go run main.go
 ```
 Open service in browser = `http://localhost:8100/products`
 
-## 2. Start API gateway with Kong with Docker
+## 2. Start [Kong API gateway](https://konghq.com/) with Docker
 Step 1 :: Create Docker network
 ```
 $docker network create kong-net
