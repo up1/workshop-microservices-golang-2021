@@ -7,3 +7,7 @@
   * [API Gateway with Kong](https://github.com/up1/workshop-microservices-golang-2021/tree/main/sync/api-gateway-with-kong)
     * [gRPC plugin for Kong](https://docs.konghq.com/hub/kong-inc/grpc-gateway/)
 * Asynchronous communication
+* Observability
+  * [Centralize logging](https://github.com/up1/workshop-microservices-golang-2021/tree/main/observability/centralize_logging)
+  * Distributed Tracing
+  * Application metrics
