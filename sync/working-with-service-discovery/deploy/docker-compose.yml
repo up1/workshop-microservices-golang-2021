@@ -40,6 +40,21 @@ services:
     networks:
       - demo-net
 
+  user-service-docker:
+    build:
+      context: ..
+      dockerfile: user-service-docker/Dockerfile
+    image: somkiat/user-service-docker:1.0
+    environment:
+      - USER_SERVICE_PORT=8081
+      - CONSUL_HTTP_ADDR=consul:8500
+    ports:
+      - "8081:8081"
+    depends_on:
+      - consul
+    networks:
+      - demo-net
+
 networks:
   demo-net:
     driver: bridge
