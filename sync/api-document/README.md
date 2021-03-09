@@ -1,6 +1,6 @@
 # Step to run
 
-## 1. Generate api document with Swagger
+## 1. Generate api document with [Swagger](https://swagger.io/)
 * Using [swag](https://github.com/swaggo/swag)
 * Web framework with [Gin](https://github.com/gin-gonic/gin)
 
