@@ -27,6 +27,7 @@ Open in browser `http://localhost:8080/user-products`
 ```
 $cd deploy
 $docker-compose build
+$docker-compose up -d consul
 $docker-compose up -d
 $docker-compose ps
 $docker-compose logs --follow

@@ -20,8 +20,6 @@ services:
       - CONSUL_HTTP_ADDR=consul:8500
     ports:
       - "8100:8100"
-    depends_on:
-      - consul
     networks:
       - demo-net
 
@@ -35,8 +33,6 @@ services:
       - CONSUL_HTTP_ADDR=consul:8500
     ports:
       - "8080:8080"
-    depends_on:
-      - consul
     networks:
       - demo-net
 
@@ -47,11 +43,8 @@ services:
     image: somkiat/user-service-docker:1.0
     environment:
       - USER_SERVICE_PORT=8081
-      - CONSUL_HTTP_ADDR=consul:8500
     ports:
       - "8081:8081"
-    depends_on:
-      - consul
     networks:
       - demo-net
 

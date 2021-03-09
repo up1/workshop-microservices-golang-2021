@@ -10,4 +10,4 @@ RUN cd ${SOURCE}product-service/ && CGO_ENABLED=0 go build -o product-service
 
 WORKDIR ${SOURCE}
 CMD ${SOURCE}product-service/product-service
-EXPOSE 8080
+EXPOSE 8100

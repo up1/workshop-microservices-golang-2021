@@ -35,7 +35,7 @@ func healthcheck(w http.ResponseWriter, r *http.Request) {
 func UserProduct(w http.ResponseWriter, r *http.Request) {
 	p := []product{}
 	client := &http.Client{}
-	resp, err := client.Get("http://product-service" + "/products")
+	resp, err := client.Get("http://product-service:8100" + "/products")
 	if err != nil {
 		fmt.Fprintf(w, "Error. %s", err)
 		return
@@ -58,7 +58,7 @@ func UserProduct(w http.ResponseWriter, r *http.Request) {
 func port() string {
 	p := os.Getenv("USER_SERVICE_PORT")
 	if len(strings.TrimSpace(p)) == 0 {
-		return ":8080"
+		return ":8081"
 	}
 	return fmt.Sprintf(":%s", p)
 }
