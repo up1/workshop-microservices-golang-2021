@@ -2,6 +2,7 @@
 
 ## 1. Generate api document with Swagger
 * Using [swag](https://github.com/swaggo/swag)
+* Web framework with [Gin](https://github.com/gin-gonic/gin)
 
 ```
 $swag init --dir cmd/ --parseDependency --output docs
