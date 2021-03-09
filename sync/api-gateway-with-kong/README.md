@@ -105,3 +105,33 @@ $curl -i -X DELETE --url http://localhost:8001/routes/<route id/name>
 
 $curl -i -X DELETE --url http://localhost:8001/services/<service name>
 ```
+
+# 4. Working with Docker compose
+```
+$sh start.sh
+$docker-compose ps
+
+     Name                    Command                  State                      Ports
+------------------------------------------------------------------------------------------------------
+kong              /docker-entrypoint.sh kong ...   Up             0.0.0.0:80->8000/tcp,
+                                                                  0.0.0.0:8001->8001/tcp,
+                                                                  0.0.0.0:443->8443/tcp, 8444/tcp
+kong-database     docker-entrypoint.sh postgres    Up (healthy)   5432/tcp
+kong-migrations   /docker-entrypoint.sh kong ...   Exit 0
+```
+
+OR
+```
+$docker-compose up -d kong-database
+$docker-compose ps
+
+$docker-compose up migrations
+
+$docker-compose up -d kong
+$docker-compose ps
+```
+
+Delete all
+```
+$docker-compose down
+```
