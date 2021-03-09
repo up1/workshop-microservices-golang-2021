@@ -3,6 +3,7 @@
   * [API Documentation with Swagger](https://github.com/up1/workshop-microservices-golang-2021/tree/main/sync/api-document)
   * [Service-to-service with Service Discovery](https://github.com/up1/workshop-microservices-golang-2021/tree/main/sync/working-with-service-discovery)
     * [Consul](https://www.consul.io/)
-  * [Protobuf and GRPC](https://github.com/up1/workshop-microservices-golang-2021/tree/main/sync/protobuf)
+  * [Protobuf and gRPC](https://github.com/up1/workshop-microservices-golang-2021/tree/main/sync/protobuf)
   * [API Gateway with Kong](https://github.com/up1/workshop-microservices-golang-2021/tree/main/sync/api-gateway-with-kong)
+    * [gRPC plugin for Kong](https://docs.konghq.com/hub/kong-inc/grpc-gateway/)
 * Asynchronous communication
