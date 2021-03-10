@@ -2,7 +2,7 @@ package demo
 
 import (
 	"demo/beer"
-	_ "demo/docs"
+	// _ "demo/docs"
 
 	"github.com/gin-gonic/gin"
 	"github.com/penglongli/gin-metrics/ginmetrics"
