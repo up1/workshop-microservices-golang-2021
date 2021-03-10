@@ -13,4 +13,6 @@
   * [Application metrics](https://github.com/up1/workshop-microservices-golang-2021/tree/main/observability/application_metrics)
 * Testing
   * [Component testing](https://github.com/up1/workshop-microservices-golang-2021/tree/main/testing/component-testing)
+    * Database
+    * External service/api 
   * Contract testing
