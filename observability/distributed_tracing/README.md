@@ -12,6 +12,7 @@ $docker container run \
 	jaegertracing/all-in-one \
 	--log-level=debug
 ```
+Open in browser url=`http://localhost:16686/`
 
 Step 2 :: Start all services
 ```
@@ -25,9 +26,7 @@ Step 3 :: Testing
 * Call service 1 -> service 2 with `http://localhost:8000/call-service2`
 * Call service 1 -> service 2 -> service 3 with `http://localhost:8000/call-service3`
 
-## 2. Start with Docker compose
-
-## 3. Start with make file
+## 2. Start with make file
 ```
 $make bye
 $make love
