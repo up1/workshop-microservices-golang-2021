@@ -10,4 +10,4 @@
 * Observability
   * [Centralize logging](https://github.com/up1/workshop-microservices-golang-2021/tree/main/observability/centralize_logging)
   * [Distributed Tracing](https://github.com/up1/workshop-microservices-golang-2021/tree/main/observability/distributed_tracing)
-  * Application metrics
+  * [Application metrics](https://github.com/up1/workshop-microservices-golang-2021/tree/main/observability/application_metrics)
