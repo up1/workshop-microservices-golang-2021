@@ -117,7 +117,7 @@ $go mod tidy
 $go run cmd/main.go
 ```
 
-## 2. Testing with Postman
+## 5. Testing with Postman
 ```
 $cd postman
 $newman run *.json
