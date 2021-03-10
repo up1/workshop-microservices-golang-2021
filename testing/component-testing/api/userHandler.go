@@ -6,6 +6,7 @@ import (
 	"encoding/json"
 	"log"
 	"net/http"
+	"os"
 
 	"github.com/labstack/echo/v4"
 )
@@ -25,7 +26,7 @@ func GetUsers(c echo.Context) error {
 func GetUsersFromAPI(c echo.Context) error {
 	// get all the users in the db
 	client := &http.Client{}
-	resp, err := client.Get("https://jsonplaceholder.typicode.com/users")
+	resp, err := client.Get(os.Getenv("API_URL") + "/users")
 	if err != nil {
 		return c.JSON(http.StatusInternalServerError, nil)
 	}

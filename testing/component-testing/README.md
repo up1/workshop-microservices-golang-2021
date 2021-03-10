@@ -64,5 +64,10 @@ $newman run *.json
 
 # Testing with External services
 
+## 1. Start web server
 
-
+```
+$export API_URL=https://jsonplaceholder.typicode.com
+$go mod tidy
+$go run cmd/main.go
+```
