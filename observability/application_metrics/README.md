@@ -34,5 +34,7 @@ Open url=http://localhost:3000 in browser
 * Username=admin
 * Password=admin
 
+Add more dashboard for [Go Gin Prometheus](https://github.com/zsais/go-gin-prometheus)
+
 
 
