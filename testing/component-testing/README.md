@@ -45,6 +45,7 @@ $go run cmd/main.go
 Access to API with URL `http://localhost:8080/users`
 
 ## 3. Testing with [Postman](https://www.postman.com/) + [newman cli](https://www.npmjs.com/package/newman)
+* [Working with JSON SChema](https://json-schema.org/understanding-json-schema/)
 ```
 // Install newman via npm
 $npm install -g newman
