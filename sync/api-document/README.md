@@ -5,6 +5,10 @@
 * Web framework with [Gin](https://github.com/gin-gonic/gin)
 
 ```
+// Install
+$go get -u github.com/swaggo/swag/cmd/swag
+
+// Generate docs
 $swag init --dir cmd/ --parseDependency --output docs
 
 2021/03/09 19:58:53 Generate swagger docs....

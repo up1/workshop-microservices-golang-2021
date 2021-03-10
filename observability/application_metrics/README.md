@@ -6,6 +6,7 @@ $go mod tidy
 $go run cmd/main.go
 ```
 
+## 2. Testing
 URL for testing
 * Metrics page for Prometheus => http://localhost:8080/metrics
 * List of all beers => http://localhost:8080/beer
@@ -35,6 +36,4 @@ Open url=http://localhost:3000 in browser
 * Password=admin
 
 Add more dashboard for [Go Gin Prometheus](https://github.com/zsais/go-gin-prometheus)
-
-
 
