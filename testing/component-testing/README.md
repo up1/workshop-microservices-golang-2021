@@ -71,3 +71,54 @@ $export API_URL=https://jsonplaceholder.typicode.com
 $go mod tidy
 $go run cmd/main.go
 ```
+
+Access to API with URL `http://localhost:8080/users/external`
+
+## 2. Testing with Postman
+```
+$cd postman
+$newman run *.json
+```
+
+## 3. Stub/Mock External services
+
+List of tools
+* [Stubby4j](https://github.com/azagniotov/stubby4j)
+* [Stubby4node](https://github.com/mrak/stubby4node)
+* [JSON Server](https://github.com/typicode/json-server)
+* [WireMock](http://wiremock.org/)
+* [MounteBank](http://www.mbtest.org/)
+
+### Example with Stubby4J
+```
+$cd mock_api
+$java -jar java -jar stubby4j-x.x.xx.jar -d api.yml
+```
+
+
+Docker
+```
+$cd mock_api
+$docker container run -d --rm \
+    -e YAML_CONFIG=api.yml \
+    -v $(pwd):/home/stubby4j/data \
+    -p 8882:8882 -p 8889:8889 -p 7443:7443 \
+    azagniotov/stubby4j:latest-jre8
+```
+
+Call mock api = http://localhost:8882/users
+
+
+## 4. Stop and Start web server
+
+```
+$export API_URL=http://localhost:8882
+$go mod tidy
+$go run cmd/main.go
+```
+
+## 2. Testing with Postman
+```
+$cd postman
+$newman run *.json
+```

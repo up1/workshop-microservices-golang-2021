@@ -85,7 +85,7 @@
 							"    var jsonData = pm.response.json();",
 							"    pm.expect(jsonData.length).to.eql(3);",
 							"    pm.expect(jsonData[0].id).to.eql(1);",
-							"    pm.expect(jsonData[0].name).to.eql(\"name1\");",
+							"    pm.expect(jsonData[0].name).to.eql(\"mock user 01\");",
 							"    pm.expect(jsonData[0].age).to.eql(20);",
 							"});",
 							"",

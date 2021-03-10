@@ -1,0 +1,9 @@
+- request:
+    method: GET
+    url: /users
+
+  response:
+    status: 200
+    headers:
+      content-type: application/json
+    file: users.json
