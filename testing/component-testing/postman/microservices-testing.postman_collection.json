@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "http://localhost:8080/users",
+			"name": "Get users from database",
 			"event": [
 				{
 					"listen": "test",
@@ -65,6 +65,72 @@
 					"port": "8080",
 					"path": [
 						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get users from external api",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Check data in response body\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.length).to.eql(3);",
+							"    pm.expect(jsonData[0].id).to.eql(1);",
+							"    pm.expect(jsonData[0].name).to.eql(\"name1\");",
+							"    pm.expect(jsonData[0].age).to.eql(20);",
+							"});",
+							"",
+							"",
+							"var schema = {",
+							"  \"type\": \"array\",",
+							"  \"items\": {",
+							"    \"type\": \"object\",",
+							"    \"properties\": {",
+							"        \"id\": { \"type\": \"number\" },",
+							"        \"name\": { \"type\": \"string\" },",
+							"        \"age\":  { ",
+							"            \"type\": \"number\",",
+							"            \"minimum\": 1,",
+							"            \"inclusiveMaximum\": 100",
+							"         },",
+							"    },",
+							"    \"required\": [\"id\", \"name\"]",
+							"  }",
+							"};",
+							"",
+							"var actualResponse = pm.response.json();",
+							"",
+							"",
+							"pm.test('Check schema of response', function () {",
+							"    pm.expect(tv4.validate(actualResponse, schema)).to.be.true;",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/users/external",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"external"
 					]
 				}
 			},
