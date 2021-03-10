@@ -2,7 +2,7 @@
 
 ## 1. Start with manual process
 
-Step 1 :: Create jaeger tracing server
+Step 1 :: Create [Jaeger tracing server](https://www.jaegertracing.io/)
 ```
 $docker container run \
 	-d --rm --name tracer \
