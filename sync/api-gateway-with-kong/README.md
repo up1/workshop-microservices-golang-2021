@@ -67,16 +67,11 @@ Step 1 :: create service
 $curl -i -X POST \
   --url http://localhost:8001/services/ \
   --data 'name=product_service' \
-  --data 'url=http://<your ip>:8100'
+  --data 'url=http://host.docker.internal:8100'
 
 // List of all services
 $curl http://localhost:8001/services
 ```
-
-curl -i -X POST \
-  --url http://localhost:8001/services/ \
-  --data 'name=product_service' \
-  --data 'url=http://192.168.1.33:8100'
 
 Step 2 :: create route for product service
 ```
@@ -105,7 +100,6 @@ $curl -i -X DELETE --url http://localhost:8001/routes/<route id/name>
 
 $curl -i -X DELETE --url http://localhost:8001/services/<service name>
 ```
-
 # 4. Working with Docker compose
 ```
 $sh start.sh
