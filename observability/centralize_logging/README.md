@@ -46,6 +46,23 @@ Check status of Kibana server at http://localhost:5601/
 * Monitoring data from log files
 * Send data to Elasticsearch server
 
+
+File `filebeat.yml`
+```
+filebeat.inputs:
+  - type: log
+    enabled: true
+    json.keys_under_root: true
+    paths:
+      - <path>/sample*
+
+output.elasticsearch:
+  hosts: ["localhost:9200"]
+```
+
+Run Filebeat
 ```
 $filebeat -e -c filebeat.yml
 ```
+
+See result in Kibana
