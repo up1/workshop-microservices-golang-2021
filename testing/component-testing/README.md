@@ -1,3 +1,10 @@
+## Component Testing
+* Docker
+* PostgreSQL
+* External API
+* Mock/Stub server
+* Postman and newman
+
 # Testing with Database
 
 ## 1. Start PostgreSQL database server
