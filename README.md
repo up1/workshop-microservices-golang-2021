@@ -16,3 +16,4 @@
     * Database
     * External service/api 
   * Contract testing
+    * [Pact with NodeJS](https://github.com/up1/workshop-contract-testing)
