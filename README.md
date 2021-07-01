@@ -18,5 +18,10 @@
   * API Testing with [Postman](https://www.postman.com/) and [newman](https://www.npmjs.com/package/newman)
   * Contract testing
     * [Pact with NodeJS](https://github.com/up1/workshop-contract-testing)
+* DevOps + CI + CD
+  * [Workshop with Go](https://github.com/up1/workshop-devops-go)
+     * Build -> Testing -> Ship -> Run
+     * Docker
+     * Kubernetes
 
 
