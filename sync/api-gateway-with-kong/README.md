@@ -13,7 +13,7 @@ Step 1 :: Create Docker network
 $docker network create kong-net
 ```
 
-Step 2 :: Create database for Knong
+Step 2 :: Create database for Kong
 ```
 $docker run -d --name kong-database \
     --network=kong-net \
