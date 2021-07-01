@@ -15,5 +15,8 @@
   * [Component testing](https://github.com/up1/workshop-microservices-golang-2021/tree/main/testing/component-testing)
     * Database
     * External service/api 
+  * API Testing with [Postman](https://www.postman.com/) and [newman](https://www.npmjs.com/package/newman)
   * Contract testing
     * [Pact with NodeJS](https://github.com/up1/workshop-contract-testing)
+
+
